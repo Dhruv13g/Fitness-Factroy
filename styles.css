@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding:0;
+}
+
+*{
+    margin: 0;
+    padding:0;
+}
+.container1
+{
+    width : 100%;
+    height : 100vh;
+    background-image: url('images/workout-fitness-equipment-5k-wallpaper-preview.jpg');
+    background-size: contain;
+    background-position: center;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+.row1
+{
+  display: flex;
+  align-items: center;
+  height: 78%;
+  margin-top: -10px;
+
+}
+.col1
+{
+  flex-basis: 50%;
+}
+h1{
+  color : #fff;
+  font-size: 100px;
+  margin-bottom: 30px;
+}
+p{
+  color : #fff;
+  font-size: 20px;
+  line-height: 20px;
+  font-size: 25px;
+}
+button{
+  width:180px;
+  color :#000;
+  font-size : 30px;
+  padding :12px 0;
+  background: #fff;
+  border: 0;
+  border-radius: 20px;
+  outline: none;
+  margin-top:30px;
+  cursor: pointer;
+
+}
+.card
+{
+  width:200px;
+  height:230px;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 15px 25px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 10px 15px;
+  background-position: center;
+  background-size: cover;
+  transition: transform 0.5s;
+}
+.card1
+{
+  background-image: url('https://thumbs.dreamstime.com/b/yoga-lotus-female-silhouette-blue-background-34917708.jpg');
+}
+  .card2
+{
+  background-image: url('images/metal-dumbbell-gym-background-d-rendering-78457375.jpg');
+}
+.card3
+{
+    background-image: url('images/dumbbells-jar-protein-whey-isolated-white-background-sports-nutrition-bodybuilding-supplements-gym-bodybuilding-fitness-40425160.jpg');
+}
+.card4
+{
+  background-image: url('data:image/jpeg;base64,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');
+}
+.card:hover{
+    transform: translateY(-10px);
+}
+h3{
+  color:black;
+  text-shadow: 0px 0px 15px #000 ;
+  font: size 8px; ;
+}
+.cont
+{
+  width : 100%;
+  height : 100vh;
+  background-image: url('https://thumbs.dreamstime.com/b/fitness-athlete-clicks-contact-icons-background-gym-young-218226504.jpg');
+  background-size: contain;
+  background-position: center;
+  padding-left: 8%;
+  padding-right: 8%;
+  box-sizing: border-box;
+}
+
+
+
+#foot
+{
+  height: 20px;
+  background-color: #000;
+  color: antiquewhite;
+  text-align: center;
+  padding: 60px 0px;
+}
+.contact {
+  background-color: rgb(244, 242, 239);
+  height: 73vh;
+
+}
+.form {
+  max-width: 50%;
+  margin: auto;
+  padding: 10px;
+}
+#vid
+{
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+#imgheight
+{
+    height: 10px;
+}
