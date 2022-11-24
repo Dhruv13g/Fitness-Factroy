@@ -1,0 +1,383 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="yoga.css" />
+    <!-- it will load fast so i have pasted in file -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="nav.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <script></script>
+    <title>YOGA</title>
+</head>
+
+<body data-spy="scroll" data-target="#navbarNav" data-offset="50">
+
+
+    <!-- nav bar starts -->
+    <div class="navbar1">
+        <a href="index.html">
+            <img src = "data:image/png;base64,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" class="menu-icon" id="loggo">
+           </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="contactus.html">CONTACT US</a></li>
+                <li><a href="login.html">LOG IN</a></li>
+                <li><a href="register.html">REGISTER</a></li>
+                <li><a href="https://www.muscleblaze.com/muscleblaze-fit-food?itracker=w:|topbar|;c:fit-foods|;">FIT FOODS</a></li>
+            </ul>
+        </nav> 
+    </div> 
+
+
+    <!-- navbar ends -->
+
+
+    <!-- section 1 -->
+
+    <section class="hero d-flex flex-column justify-content-center align-items-center" id="home">
+        <div class="bg-overlay">
+            <video autoplay muted loop id="myVideo">
+                <source src="images/video.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 mx-auto col-12">
+                    <div class="hero-text mt-5 text-center">
+                        <h4 data-aos="fade-up" data-aos-delay="300"
+                            style="font-family: 'Lora', serif; font-weight: 600; letter-spacing: 2px;">For your Inner
+                            Peace</h4>
+
+                        <h1 data-aos="fade-up" data-aos-delay="500" class="text-black"
+                            style="font-family: 'Baloo 2', cursive;">
+                            Be Alive. Be Strong. Be Fit. Be Relaxed. Be Happy. Just be.
+                        </h1>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- section 1 ends -->
+    <!-- section-2 starts -->
+
+    <section class="ftco-section bg-light" id="feature">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+                    <div class="offer-deal text-center">
+                        <div class="img" style="background-image: url(images/gallery-1.jpg)"></div>
+                        <div class="text mt-4">
+                            <h3 class="mb-4">Power Yoga</h3>
+                            <p class="mb-5">
+                                Power yoga is a vinyasa-based (where flow and breath are matched) contemporary yoga technique that focuses on movement,
+                                cardio output, and strengthening exercises to achieve various objectives ranging from toning and strengthening the body 
+                                to weight-loss. It is a dynamic physical workout.
+                            </p>
+                            <p>
+                                <a href="#" class="btn custom-btn bg-color mt-3" data-aos="fade-up" data-aos-delay="100"
+                                    data-toggle="modal" data-target="#membershipForm">
+                                    Learn more<span class="fa fa-arrow-right"></span></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+                    <div class="offer-deal text-center">
+                        <div class="img" style="background-image: url(images/gallery-2.jpg)"></div>
+                        <div class="text mt-4">
+                            <h3 class="mb-4">Meditation Class</h3>
+                            <p class="mb-5">
+                                Meditation is a practice in which an individual uses a technique – such as mindfulness, or focusing the mind on a particular object,
+                                 thought, or activity – to train attention and awareness, and achieve a mentally clear and emotionally calm and stable state.
+                                 Meditation is practiced in numerous religious traditions.
+                            </p>
+                            <p>
+                                <a href="#" class="btn custom-btn bg-color mt-3" data-aos="fade-up" data-aos-delay="100"
+                                    data-toggle="modal" data-target="#membershipForm">
+                                    Learn more <span class="fa fa-arrow-right"></span></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="500">
+                    <div class="offer-deal text-center">
+                        <div class="img" style="background-image: url(images/gallery-3.jpg)"></div>
+                        <div class="text mt-4">
+                            <h3 class="mb-4">Aerobics Class</h3>
+                            <p class="mb-5">
+                                Aerobic exercise is any type of cardiovascular conditioning, or “cardio.”  By definition, aerobic exercise means “with oxygen.”
+                                 Your breathing and heart rate will increase during aerobic activities. Aerobic exercise helps keep your heart, lungs, and circulatory system healthy.
+                                It can include activities like brisk walking, swimming.
+                            </p>
+                            <p>
+                                <a href="#" class="btn custom-btn bg-color mt-3" data-aos="fade-up" data-aos-delay="100"
+                                    data-toggle="modal" data-target="#membershipForm">
+                                    Learn more <span class="fa fa-arrow-right"></span></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="600">
+                    <div class="offer-deal text-center">
+                        <div class="img" style="background-image: url(images/gallery-4.jpg)"></div>
+                        <div class="text mt-4">
+                            <h3 class="mb-4">Spiritual Yoga</h3>
+                            <p class="mb-5">
+                                Spiritual Yoga is a quest to know a greater reality—beyond the senses, intellect, and emotions.
+                                 Your concept of that reality might be cosmic: Spirit, Higher Power, Truth, God, Divine Mother. 
+                                 Or it might be very personal: soul, Higher Self, your own highest potential.“The yogi must turn his conceptions into preception.
+                            </p>
+                            <p>
+                                <a href="#" class="btn custom-btn bg-color mt-3" data-aos="fade-up" data-aos-delay="100"
+                                    data-toggle="modal" data-target="#membershipForm">
+                                    Learn more <span class="fa fa-arrow-right"></span></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section-2 ends -->
+
+
+    <section class="home-about spad" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="home_about_pic">
+                        <div class="home_about_pic_item large-item set-bg" data-setbg="images/about-1.jpg" data-aos="fade-up"
+                            data-aos-delay="300"></div>
+                        <div class="home_about_pic_item">
+                            <div class="home_about_pic_item_inner set-bg" data-setbg="images/about-2.jpg" data-aos="fade-up"
+                                data-aos-delay="400"></div>
+                            <div class="home_about_pic_item_inner set-bg" data-setbg="images/about-3.jpg" data-aos="fade-up"
+                                data-aos-delay="500"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="home_about_text" data-aos="fade-up" data-aos-delay="300">
+                        <div class="section-title">
+                            <h2>Welcome to <br>Om Mantra</h2>
+                        </div>
+                        <p>Yoga is an ancient Indian practice for meditation, which evolved since BCE.  Yoga is a set of poses or postures of the body called "Asana".  There is a prescribed method to set oneself on the ground, to make the posture with the legs, hands, head and the entire body.  Asanas had been explored, invented and documented in books.
+ 
+                            Yoga asanas are performed slowly, held for a minute or more.  The muscles are exercised in the right way.  One should not perform yoga after having food ie., with full stomach.  Breathing in and breathing out air (called pranayama) is also part of Yoga.  Yoga is very useful to people who cannot play sports or do jogging or do other demanding exercises like aerobics to keep fit.
+                         
+                            Yoga increases the health of body, mind.  Increases the mind power, concentration.  Keeps the organs and limbs in the body fit.  Many gurus including Patanjali developed the Yoga practice. 
+                            <a href="#" class="btn custom-btn bg-color mt-3" data-aos="fade-up"
+                                data-aos-delay="400">More About Us &rarrhk;</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section 4 starts -->
+
+    <section class="ftco-section ftco-no-pt ftco-no-pb" id="gallery">
+        <div class="container">
+            <div class="row no-gutters justify-content-center mb-5 pb-2">
+                <div class="col-md-6 text-center heading-section">
+                    <span class="subheading">Gallery</span>
+                    <h2 class="mb-4">Our Gallery</h2>
+                    <p>
+                        “The nature of yoga is to shine the light of awareness into the darkest corners of the body.”
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid p-0">
+            <div class="row no-gutters">
+                <div class="col-md-6 col-lg-3">
+                    <div class="project">
+                        <img src="images/work-1.jpg" alt="" class="img-fluid">
+                        <div class="text">
+                            <span>Asana</span>
+                            <h3><a href="#">Yoga</a></h3>
+                        </div>
+                        <a href="images/work-1.jpg" class="d-flex justify-content-center align-items-center"></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="project">
+                        <img src="images/work-2.jpg" alt="" class="img-fluid">
+                        <div class="text">
+                            <span>Asana</span>
+                            <h3><a href="#">Yoga</a></h3>
+                        </div>
+                        <a href="images/work-2.jpg" class="d-flex justify-content-center align-items-center"></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="project">
+                        <img src="images/work-3.jpg" alt="" class="img-fluid">
+                        <div class="text">
+                            <span>Asana</span>
+                            <h3><a href="#">Yoga</a></h3>
+                        </div>
+                        <a href="images/work-3.jpg" class="d-flex justify-content-center align-items-center"></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="project">
+                        <img src="images/work-4.jpg" alt="" class="img-fluid">
+                        <div class="text">
+                            <span>Asana</span>
+                            <h3><a href="#">Yoga</a></h3>
+                        </div>
+                        <a href="images/work-4.jpg" class="d-flex justify-content-center align-items-center"></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="project">
+                        <img src="images/work-5.jpg" alt="" class="img-fluid">
+                        <div class="text">
+                            <span>Asana</span>
+                            <h3><a href="#">Yoga</a></h3>
+                        </div>
+                        <a href="images/work-5.jpg" class="d-flex justify-content-center align-items-center"></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="project">
+                        <img src="images/work-6.jpg" alt="" class="img-fluid">
+                        <div class="text">
+                            <span>Asana</span>
+                            <h3><a href="#">Yoga</a></h3>
+                        </div>
+                        <a href="images/work-6.jpg" class="d-flex justify-content-center align-items-center"></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="project">
+                        <img src="images/work-7.jpg" alt="" class="img-fluid">
+                        <div class="text">
+                            <span>Asana</span>
+                            <h3><a href="#">Yoga</a></h3>
+                        </div>
+                        <a href="images/work-7.jpg" class="d-flex justify-content-center align-items-center"></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="project">
+                        <img src="images/work-8.jpg" alt="" class="img-fluid">
+                        <div class="text">
+                            <span>Asana</span>
+                            <h3><a href="#">Yoga</a></h3>
+                        </div>
+                        <a href="images/work-8.jpg" class="d-flex justify-content-center align-items-center"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- section 4 ends -->
+
+    <!-- section 5 starts -->
+
+    <section class="class section style-cards" id="class">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-12 text-center mb-5">
+                    <h6 data-aos="fade-up">Get a Perfect Body</h6>
+                    <h1 data-aos="fade-up" data-aos-delay="200">Our Training Classes</h1>
+                </div>
+
+                <div class="card-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="desc-3">
+                        <h3 class="mb-2">Yoga Training</h3>
+                        <p>
+                            The word “Yoga” essentially means, “that which brings you to reality”. Literally, it means
+                            “union.” Union means it
+                            brings you to the ultimate reality, where individual manifestations of life are surface
+                            bubbles in the process of
+                            creation.
+                        </p>
+                    </div>
+                    <img src="images/tv.png" alt="Yoga" data-aos="fade-up" data-aos-delay="500">
+                    <video data-aos="fade-up" data-aos-delay="500" autoplay playsinline muted loop>
+                        <source src="images/Pexels Videos 2790143.mp4"></video>
+                </div>
+                <div class="card-2" data-aos="fade-up" data-aos-delay="200">
+                    <img src="images/tv.png" alt="Yoga" data-aos="fade-up" data-aos-delay="500">
+                    <video data-aos="fade-up" data-aos-delay="500" autoplay playsinline muted loop>
+                        <source src="images/production ID_4612365.mp4"></video>
+
+                    <div class="desc-2">
+                        <h3 class="mb-2">Cardio Training</h3>
+                        <p>
+                            Cardio Yoga is a type of yoga class that combines Yoga moves with cardiovascular exercises.
+                            The workout takes classic
+                            yoga moves and makes them a bit faster, with a more rapid flow between sequences.
+                            The non-stop movement gets your heart beating and your muscles burning.
+                        </p>
+                    </div>
+                </div>
+                <div class="card-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="desc-3">
+                        <h3 class="mb-2">Meditation Training</h3>
+                        <p>
+                            "Meditation, which is the practice of focused concentration, bringing yourself back to the
+                            moment over and over again,
+                            actually addresses stress, whether positive or negative." Meditation can also reduce the
+                            areas of anxiety, chronic pain,
+                            depression, heart disease and high blood pressure.
+                        </p>
+                    </div>
+                    <img src="images/tv.png" alt="Yoga" data-aos="fade-up" data-aos-delay="500">
+                    <video data-aos="fade-up" data-aos-delay="500" autoplay playsinline muted loop>
+                        <source src="images/1.mp4"></video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section 5 ends -->
+    <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scroll/16.1.3/smooth-scroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/SlickNav/1.0.10/jquery.slicknav.js"></script>
+    <script src="yogaa.js"></script>
+
+    <div class="footer-content">
+        <footer>
+                <h3>Fitness Factory</h3>
+                <p>Join Our Community</p>
+                <ul class="socials">
+                    <li><a href="#"><img src="images/download.png"></a></li>
+                    <li><a href="#"><img src="images/images.png"></a></li>
+                    <li><a href="#"><img src="images/download.jpg"></a></li>
+                    <li><a href="#"><img src="images/download (2).png"></a></li>
+                    <li><a href="#"><img src="images/download (1).png"></a></li>
+                </ul>
+            <div class="footer-bottom">
+                <p>copyright &copy;2020 Fitness Factory. designed by <span>Fit Team</span></p>
+            </div>
+        </footer>
+        </div>
+        </div>
+</body>
+
+</html>
