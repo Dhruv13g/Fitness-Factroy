@@ -1,0 +1,81 @@
+.row{
+    text-align: center;
+    margin-right: 3rem;
+  
+  }
+  h1{
+    font-family: serif;
+    font-weight: bold;
+  
+  }
+  .gym-pic{
+    width: 550px;
+    margin-left: 7rem;
+    margin-bottom: 2rem;
+  }
+  .paragraph{
+    font-family: inherit;
+    margin-left: 7rem;
+    width: 640px;
+    text-align: left;
+  }
+  p{
+    text-align: left;
+    margin-left: 7rem;
+    line-height: 1.5rem;
+    font-family: sans-serif;
+  }
+  .heading{
+    margin-left: 7rem;
+    text-align: left;
+    font-size: 1.5rem;
+  }
+  .heading2{
+    text-align: left;
+    margin-left: 7rem;
+    margin-top: 6rem;
+  }
+  video{
+    margin-bottom: 2rem;
+  }
+  h3{
+    text-align: center;
+    color: #81C6E8;
+    margin-top: 3rem;
+  }
+  hr{
+    margin-bottom: 12rem;
+  }
+  .workout-pic{
+    width: 37rem;
+    margin-top: 2rem;
+    padding-left: 7rem;
+  }
+  .b1{
+    margin-top: 2rem;
+  }
+  .h1-last{
+    font-family: serif;
+    font-weight: bold;
+    margin-left: 6rem;
+  
+  }
+  .last0{
+    margin-right: 11rem;
+    margin-left: 9rem;
+  }
+  .last1{
+    margin-right: 8rem;
+    margin-left: 9rem;
+  }
+  .last2{
+    margin-right: 8.5rem;
+    margin-left: 9rem;
+  }
+  video{
+    width: 50rem
+  }
+#mn
+{
+    text-align: center;
+}  

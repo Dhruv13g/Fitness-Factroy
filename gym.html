@@ -1,0 +1,235 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Workout</title>
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+  <!-- css -->
+  <link rel="stylesheet" href="gym.css">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="footer.css">
+  <link rel="shortcut icon" href="images/WhatsApp Image 2022-11-24 at 22.41.41.jpg">
+</head>
+
+<body>
+  <!-- navbar -->
+
+  <div class="navbar1">
+    <a href="index.html">
+        <img src = "data:image/png;base64,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" class="menu-icon" id="loggo">
+       </a>
+    <nav>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="aboutus.html">ABOUT US</a></li>
+            <li><a href="contactus.html">CONTACT US</a></li>
+            <li><a href="login.html">LOG IN</a></li>
+            <li><a href="https://www.muscleblaze.com/muscleblaze-fit-food?itracker=w:|topbar|;c:fit-foods|;">FIT FOODS</a></li>
+        </ul>
+    </nav> 
+</div> 
+
+
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-sm-8">
+        <h1>Gym Workout Routine: </h1>
+
+        <p class="paragraph">Build new muscle mass and strip away belly fat fast with this seven-day <br> workout plan for the gym</p>
+        <img class="gym-pic" src="images/gym1.jpg.webp" alt="">
+        <p>With the right workout routine, you can achieve a whole lot in just four weeks. This workout plan for the gym is proof of that.
+          The four weekly workouts it contains are broken down by areas of the body and though the emphasis is on your chest, back and arms,
+          no muscle goes without its turn in the spotlight over the course of each week. The plan is designed to push your muscles beyond
+          their comfort zone so your body rebuilds them bigger and stronger.
+        <p>
+        <p>It’s a tough training plan, and if you’re not an experienced gym-goer who is already training regularly and are worried it might push you well beyond your comfort zone,
+          then we also have a more straightforward beginner gym
+          <a href="https://www.coachmag.co.uk/equipment/weights/744/the-best-dumbbells">workout</a> where you work the whole body in one session.
+          And if you’d prefer to exercise at home, and have a set of dumbbells handy, this four-week dumbbell workout plan will see you right (if you’re in need of weights,
+          our selection of the best dumbbells will point you in the right direction).
+        </p>
+        <p>If you are comfortable with weights training and are up for four weeks of intense training with the carrot of a bigger, leaner body dangling in front of you, then dive on in.</p>
+        <h1 class="heading">How This Gym Workout Routine Is Structured..</h1>
+        <p>In each of the four weeks of this 28-day plan you will train your chest and back twice. Sound like a lot? It is! But in some plans you only hit each muscle group every seven days,
+          which isn’t enough of a stimulus to force your body into making positive physique adaptations.</p>
+        <video width="320" height="240" controls autoplay muted>
+          <source src="media/video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p>But in this plan, doubling up each week on chest and back exercises – and therefore also working your biceps and triceps twice a week, once directly and once indirectly – will provide all the stimulus your body needs to get bigger in less
+          time. And fear not, your shoulders, abs and legs won’t miss out on the size and strength gains: they will still get enough dedicated time each week to allow them to grow bigger and stronger.</p>
+        <p>The first workout of each week targets your chest and triceps, the second your back and biceps, the third your legs and chest, and the fourth your back and shoulders. A recommended schedule is to do the workouts on Mondays, Wednesdays,
+          Fridays and Saturdays. That’s so you leave a day’s rest between upper-body focused sessions.</p>
+        <p>All four weekly workouts are made up of five moves, which you’ll perform as straight sets, so you’ll simply work through moves 1 to 5 in order. Simply do the four workouts in order every week, sticking to the exercises, sets, reps, tempo
+          (explained below) and rest periods detailed. That’s it!</p>
+        <h1 class="heading"> <a href="https://www.coachmag.co.uk/full-body-workouts/8977/tempo-training-weight-training"> Tempo Training</a> Explained</h1>
+        <p>To get the full effect from these workouts, you need to stick to the four-digit tempo code for each exercise. The first digit indicates how long in seconds you take to lower the weight, the second how long you pause at the bottom of the
+          move, the third how long you take to lift the weight, and the final digit how long you pause at the top. Keep your wits about you, because not every exercise begins with you lowering the weight, in which case you need to follow the third
+          number rather than the first.</p>
+        <p>The accumulated time under tension increases your heart rate to burn fat and break down muscle tissue so it’s rebuilt bigger and stronger. Keep each rep smooth and controlled so your muscles – not momentum – do the work.</p>
+
+        <h3>WORKOUT 1: CHEST AND TRICEPS</h3>
+        <hr color="#153462">
+        <h1 class="heading2"> <a href="https://www.coachmag.co.uk/exercises/chest-exercises/186/bench-press-technique-tips">1 Bench press</a></h1>
+        <img class="workout-pic" src="images/gym3.jpg.webp" alt="">
+        <p class="b1"> <strong>Sets</strong> 5 <strong>Reps</strong> 10 <strong>Tempo</strong> 2010 <strong>Rest</strong> 60sec </p>
+        <p>Lie on a flat bench holding a barbell with your hands slightly wider than shoulder-width apart. Brace your core, then lower the bar towards your chest. Press it back up to the start.</p>
+        <h1 class="heading2"> <a href="https://www.coachmag.co.uk/exercises/chest-exercises/186/bench-press-technique-tips">2 Triceps dip</a></h1>
+        <img class="workout-pic" src="images/gym4.jpg.webp" alt="">
+        <p class="b1"> <strong>Sets</strong> 5 <strong>Reps</strong> 10 <strong>Tempo</strong> 2010 <strong>Rest</strong> 60sec </p>
+        <p>Grip rings or parallel bars with your arms straight. Keeping your chest up, bend your elbows to lower your body as far as your shoulders allow. Press back up powerfully to return to the start.</p>
+
+        <h1 class="heading2"> <a href="https://www.coachmag.co.uk/exercises/chest-exercises/186/bench-press-technique-tips">3 Incline dumbbell press</a></h1>
+        <img class="workout-pic" src="images/gym6.jpg.webp" alt="">
+        <p class="b1"> <strong>Sets</strong> 5 <strong>Reps</strong> 10 <strong>Tempo</strong> 2010 <strong>Rest</strong> 60sec </p>
+        <p>Lie on a flat bench holding a barbell with your hands slightly wider than shoulder-width apart. Brace your core, then lower the bar towards your chest. Press it back up to the start.</p>
+        <h1 class="heading2"> <a href="https://www.coachmag.co.uk/exercises/chest-exercises/186/bench-press-technique-tips">4 Incline dumbbell flye</a></h1>
+        <img class="workout-pic" src="images/gym7.jpg.webp" alt="">
+        <p class="b1"> <strong>Sets</strong> 5 <strong>Reps</strong> 10 <strong>Tempo</strong> 2010 <strong>Rest</strong> 60sec </p>
+        <p>Lie on an incline bench holding a dumbbell in each hand above your face, with your palms facing and a slight bend in your elbows. Lower them to the sides, then bring them back to the top.</p>
+
+
+        <h1 class="heading2"> <a href="https://www.coachmag.co.uk/exercises/chest-exercises/186/bench-press-technique-tips">5 Triceps extension</a></h1>
+        <img class="workout-pic" src="images/gym8.jpg.webp" alt="">
+        <p class="b1"> <strong>Sets</strong> 5 <strong>Reps</strong> 10 <strong>Tempo</strong> 2010 <strong>Rest</strong> 60sec </p>
+        <p>Stand tall holding a dumbbell over your head with both hands, arms straight. Keeping your chest up, lower the weight behind your head, then raise it back to the start.</p>
+
+
+        <!-- back and bycps -->
+
+
+        <h3>WORKOUT 2: BACK AND BICEPS</h3>
+        <hr color="#153462">
+        <h1 class="heading2"> <a href="https://www.coachmag.co.uk/exercises/chest-exercises/186/bench-press-technique-tips">1 Pull-up</a></h1>
+        <img class="workout-pic" src="images/gym9.jpg.webp" alt="">
+        <p class="b1"> <strong>Sets</strong> 5 <strong>Reps</strong> 10 <strong>Tempo</strong> 2010 <strong>Rest</strong> 60sec </p>
+        <p>Hold a pull-up bar with an overhand grip, hands shoulder-width apart. Brace your core, then pull yourself up until your lower chest touches the bar. Lower until your arms are straight again.</p>
+        <h1 class="heading2"> <a href="https://www.coachmag.co.uk/exercises/chest-exercises/186/bench-press-technique-tips">2 Triceps dip</a></h1>
+        <img class="workout-pic" src="images/gym10.jpg.webp" alt="">
+        <p class="b1"> <strong>Sets</strong> 5 <strong>Reps</strong> 10 <strong>Tempo</strong> 2010 <strong>Rest</strong> 60sec </p>
+        <p>Hold a barbell using an overhand grip, hands just outside your legs, and lean forward from the hips. Bend your knees slightly and brace your core, then pull the bar up, leading with your elbows. Lower it back to the start.</p>
+
+        <h1 class="heading2"> <a href="https://www.coachmag.co.uk/exercises/chest-exercises/186/bench-press-technique-tips">3 Incline dumbbell press</a></h1>
+        <img class="workout-pic" src="images/gym11.jpg.webp" alt="">
+        <p class="b1"> <strong>Sets</strong> 5 <strong>Reps</strong> 10 <strong>Tempo</strong> 2010 <strong>Rest</strong> 60sec </p>
+        <p>Hold a pull-up bar with hands shoulder-width apart, palms facing you. Brace your core, then pull yourself up until your chin is over the bar. Lower until your arms are straight again.</p>
+        <h1 class="heading2"> <a href="https://www.coachmag.co.uk/exercises/chest-exercises/186/bench-press-technique-tips">4 Incline dumbbell flye</a></h1>
+        <img class="workout-pic" src="images/gym12.jpg.webp" alt="">
+        <p class="b1"> <strong>Sets</strong> 5 <strong>Reps</strong> 10 <strong>Tempo</strong> 2010 <strong>Rest</strong> 60sec </p>
+        <p>Stand with dumbbells by your sides, palms facing forwards. Keeping your elbows tucked in, curl the weights up, squeezing your biceps at the top. Lower them back to the start.</p>
+
+
+        <h1 class="heading2"> <a href="https://www.coachmag.co.uk/exercises/chest-exercises/186/bench-press-technique-tips">5 Triceps extension</a></h1>
+        <img class="workout-pic" src="images/gym13.jpg.webp" alt="">
+        <p class="b1"> <strong>Sets</strong> 5 <strong>Reps</strong> 10 <strong>Tempo</strong> 2010 <strong>Rest</strong> 60sec </p>
+        <p>Sit on an incline bench with dumbbells by your sides, palms facing forwards. Keeping your elbows tucked in, curl the weights up, squeezing your biceps at the top. Lower them back to the start.</p>
+
+
+        <!-- WORKOUT 3: LEGS AND ABS -->
+        <h3>WORKOUT 3: LEGS AND ABS</h3>
+        <hr color="#153462">
+        <h1 class="heading2"> <a href="https://www.coachmag.co.uk/exercises/chest-exercises/186/bench-press-technique-tips">1 Back squat</a></h1>
+        <img class="workout-pic" src="images/gym14.jpg.webp" alt="">
+        <p class="b1"> <strong>Sets</strong> 5 <strong>Reps</strong> 10 <strong>Tempo</strong> 2010 <strong>Rest</strong> 60sec </p>
+        <p>Stand tall, holding a bar across the back of your shoulders. Keeping your chest up and core braced, squat down as deep as you can. Drive back up through your heels to return to the start.</p>
+        <h1 class="heading2"> <a href="https://www.coachmag.co.uk/exercises/chest-exercises/186/bench-press-technique-tips">2 Good morning</a></h1>
+        <img class="workout-pic" src="images/gym15.jpg.webp" alt="">
+        <p class="b1"> <strong>Sets</strong> 5 <strong>Reps</strong> 10 <strong>Tempo</strong> 2010 <strong>Rest</strong> 60sec </p>
+        <p>Stand tall holding a light barbell across the backs of your shoulders, feet shoulder-width apart. With your core braced, bend forwards slowly from the hips, as far as your hamstrings allow but not past horizontal. Return to the start.</p>
+
+        <h1 class="heading2"> <a href="https://www.coachmag.co.uk/exercises/chest-exercises/186/bench-press-technique-tips">3 Hip thrust</a></h1>
+        <img class="workout-pic" src="images/gym16.jpg.webp" alt="">
+        <p class="b1"> <strong>Sets</strong> 5 <strong>Reps</strong> 10 <strong>Tempo</strong> 2010 <strong>Rest</strong> 60sec </p>
+        <p>Sit with your upper back supported on a bench, holding a barbell across the tops of your thighs. Thrust your hips up, squeeze your glutes at the top, and then return to the start.</p>
+        <h1 class="heading2"> <a href="https://www.coachmag.co.uk/exercises/chest-exercises/186/bench-press-technique-tips">4 Incline dumbbell press</a></h1>
+        <img class="workout-pic" src="images/gym17.jpg.webp" alt="">
+        <p class="b1"> <strong>Sets</strong> 5 <strong>Reps</strong> 10 <strong>Tempo</strong> 2010 <strong>Rest</strong> 60sec </p>
+        <p>Lie on an incline bench, holding a dumbbell in each hand by your shoulders. Press the weights up until your arms are straight, then lower them back to the start under control.</p>
+
+
+        <h1 class="heading2"> <a href="https://www.coachmag.co.uk/exercises/chest-exercises/186/bench-press-technique-tips"></a>5 Incline dumbbell flye</h1>
+        <img class="workout-pic" src="images/gym18.jpg.webp" alt="">
+        <p class="b1"> <strong>Sets</strong> 5 <strong>Reps</strong> 10 <strong>Tempo</strong> 2010 <strong>Rest</strong> 60sec </p>
+        <p>Lie on an incline bench, holding a dumbbell in each hand above your face, with your palms facing and a slight bend in your elbows. Lower them to the sides, then bring them back to the top.</p>
+
+        <!-- WORKOUT 4: BACK AND SHOULDERS -->
+
+        <h3>WORKOUT 4: BACK AND SHOULDERS</h3>
+        <hr color="#153462">
+        <h1 class="heading2"> <a href="https://www.coachmag.co.uk/exercises/chest-exercises/186/bench-press-technique-tips">1 Overhead press</a></h1>
+        <img class="workout-pic" src="images/gym19.jpg.webp" alt="">
+        <p class="b1"> <strong>Sets</strong> 5 <strong>Reps</strong> 10 <strong>Tempo</strong> 2010 <strong>Rest</strong> 60sec </p>
+        <p>Hold a bar in front of your neck with your hands just wider than shoulder-width apart. Keeping your chest up and core braced, press the bar overhead until your arms are straight. Lower it back to the start.</p>
+        <h1 class="heading2"> <a href="https://www.coachmag.co.uk/exercises/chest-exercises/186/bench-press-technique-tips">2 Rack pull</a></h1>
+        <img class="workout-pic" src="images/gym20.jpg.webp" alt="">
+        <p class="b1"> <strong>Sets</strong> 5 <strong>Reps</strong> 10 <strong>Tempo</strong> 2010 <strong>Rest</strong> 60sec </p>
+        <p>Stand tall in front of a barbell resting on safety bars at knee height. Bend and grasp the bar with an overhand grip, then stand up until your back is straight again, squeezing your shoulder blades together at the top.</p>
+
+        <h1 class="heading2"> <a href="https://www.coachmag.co.uk/exercises/chest-exercises/186/bench-press-technique-tips">3 Seated dumbbell press</a></h1>
+        <img class="workout-pic" src="images/gym21.jpg.webp" alt="">
+        <p class="b1"> <strong>Sets</strong> 5 <strong>Reps</strong> 10 <strong>Tempo</strong> 2010 <strong>Rest</strong> 60sec </p>
+        <p>Sit on an upright bench with a dumbbell in each hand at shoulder height. Keeping your chest up, press the weights directly overhead until your arms are straight, then lower them back to the start.</p>
+        <h1 class="heading2"> <a href="https://www.coachmag.co.uk/exercises/chest-exercises/186/bench-press-technique-tips">4 Lateral raise</a></h1>
+        <img class="workout-pic" src="images/gym22.jpg.webp" alt="">
+        <p class="b1"> <strong>Sets</strong> 5 <strong>Reps</strong> 10 <strong>Tempo</strong> 2010 <strong>Rest</strong> 60sec </p>
+        <p>Stand tall, holding a light dumbbell in each hand with palms facing. Keeping your chest up and a bend in your elbows, raise the weights out to shoulder height, then lower back to the start.</p>
+
+
+        <h1 class="heading2"> <a href="https://www.coachmag.co.uk/exercises/chest-exercises/186/bench-press-technique-tips">5 Reverse flye</a></h1>
+        <img class="workout-pic" src="images/gym23.jpg.webp" alt="">
+        <p class="b1"> <strong>Sets</strong> 3 <strong>Reps</strong> 12-15 <strong>Tempo</strong> 2010 <strong>Rest</strong> 60sec </p>
+        <p>Bend forward from the hips holding a light dumbbell in each hand with palms facing. Keeping a slight bend in your elbows, raise the weights out to shoulder height, then lower back to the start.</p>
+
+        <!-- diet -->
+        <h3>Diet Tips</h3>
+        <hr color="#153462">
+        <p class="diet">It’s crucial to back up your work in the gym with a healthy diet. The obvious first steps are to cut down on fast food, takeaways and booze,
+          and after that it’s all about getting the nutrients needed to build muscle.</p>
+        <p>Increasing your protein intake is a big part of this. How much protein you need to build muscle is hard to answer precisely,
+          but the general guidance for people who are strength training is 1.2-2g of protein per kilo of bodyweight per day, up from the general recommendation of 0.8-1.2 per kg of bodyweight a day.
+          That’s so your body has the fuel to repair and rebuild the muscles you’re damaging.</p>
+        <p>Protein powder is a convenient source, but it’s easy to get what you need from food, which will also contain other important nutrients. This ranked list of high-protein foods will help, and if you’re really struggling to eat enough
+          protein, top up with one of the best protein powder supplements.</p>
+        <p>Make sure you’re also eating enough carbs to provide the energy to power your training sessions. Opt for wholegrain varieties to help you towards 30g of fibre every day, which will help to keep you feeling full. Also ensure you eat at
+          least five portions of fruit and vegetables a day, ideally more. If you’re smart, you can kill two birds with one stone by preferring vegetarian sources of protein and vegan sources of protein that also count towards your five-a-day, like
+          beans and lentils.</p>
+        <p>If it all sounds like too much work, another option is to use a healthy meal delivery service. It’s more expensive than cooking for yourself, but less expensive and healthier than a Deliveroo habit. Or for a happy middle ground use a
+          recipe box service, so you can skip the planning and shopping but keep your culinary skills sharp by still cooking the meals. We’ve reviewed plenty and you’ll find all the recommendations you need in our picks of the best meal prep services
+          and best recipe boxes.</p>
+        <h1 class="h1-last">More Gym Workout Routines</h1>
+        <ul>
+          <li class="last0">The Best <a href="https://www.coachmag.co.uk/fitness-technology/4355/get-tough-mudder-upper-body-strength">Upper-Body Workout</a> Plan</li>
+          <li class="last1">Four-Week Workout <a href="https://www.coachmag.co.uk/workouts/7596/your-four-week-workout-plan-to-build-muscle">Plan For Muscle Gain</a> </li>
+          <li class="last2">Six-Week<a href=""> Strength Training Workout</a> Plan</li>
+        </ul>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <div class="footer-content">
+    <footer>
+            <h3>Fitness Factory</h3>
+            <p id="mn">Join Our Community</p>
+            <ul class="socials">
+                <li><a href="#"><img src="images/download.png"></a></li>
+                <li><a href="#"><img src="images/images.png"></a></li>
+                <li><a href="#"><img src="images/download.jpg"></a></li>
+                <li><a href="#"><img src="images/download (2).png"></a></li>
+                <li><a href="#"><img src="images/download (1).png"></a></li>
+            </ul>
+        <div class="footer-bottom">
+            <p>copyright &copy;2020 Fitness Factory. designed by <span>Fit Team</span></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

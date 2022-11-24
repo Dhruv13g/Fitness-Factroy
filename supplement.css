@@ -1,0 +1,124 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+}
+.title-image{
+    width: 600px;
+    height: 500px;
+  }
+  
+  .container-fluid{
+    padding: 3% ;
+  }
+  .about{
+    text-align: center;
+  }
+  h1{
+    font-family: "Montserrat-Black";
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 1.5;
+    padding-bottom: 20px;
+  }
+  h2{
+    font-family: "Montserrat-thin";
+    line-height: 1.5;
+  
+  
+  }
+  h6{
+    font-family: "Montserrat-thin";
+    margin-top: 30px;
+  
+  }
+  h3{
+    font-family: "Montserrat-thin";
+    font-weight: bold;
+    font-size: 1rem;
+  
+  
+  }
+  .about{
+    padding-top: 55px;
+    padding-bottom: 20px;
+  }
+  .card{
+    text-align: center;
+  }
+  
+  #pricing{
+    text-align: center;
+  }
+  .deal-of-day{
+  
+    font-family: sans-serif;
+  }
+  
+  .stock{
+    color: #00ABB3;
+    font-size: 30px;
+  }
+  #pricing{
+    padding: 100px;
+    padding-top: 100px;
+    margin-bottom: 100px;
+  }
+  .card-image{
+    width: 10rem;
+  }
+  .price{
+    font-family: fantasy;
+    font-size: 1rem;
+    color: #0D4C92;
+  
+  }
+  .card-body{
+    text-align: left;
+    color: #00ABB3;
+  }
+  .protien-name{
+    color: black;
+  }
+  #pricing1{
+    padding: 100px;
+    padding-top: 0rem;
+  
+  }
+  
+  .footer-icon{
+    margin: 20px 10px;
+  }
+  #footer1{
+    text-align: center;
+  }
+  .footer-icon{
+    margin: 20px 10px;
+  }
+  
+  #press{
+    text-align: center;
+    padding-bottom: 3%;
+  }
+  .press-logo{
+  
+    margin: 20px 20px 50px;
+  }
+  
+  #testimonials{
+    text-align: center;
+  }
+  .testimonial-image{
+    width: 80rem;
+    margin: 20px;
+  }
+  .deal-of-day{
+    text-align: center;
+  }
+  .stock{
+    text-align: center;
+  }
+  
+  
+  
+ 
