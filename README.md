@@ -12,6 +12,6 @@ Presentation ppt------> [fitnesspro.pptx](https://github.com/Dhruv13g/Fitness-Fa
 
 Project Report------->  [projectrepo.pdf](https://github.com/Dhruv13g/Fitness-Factroy/files/10102289/projectrepo.pdf)
 
-
+Drive link for video ------>https://drive.google.com/drive/folders/1_RcWCh18teSwxwpCgrtTBvLGfNUhCXqM?usp=sharing
 A open source website
 
